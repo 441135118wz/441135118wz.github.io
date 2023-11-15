@@ -6,7 +6,7 @@
   <link href="https://441135118wz.github.io/atom.xml" rel="self"/>
   
   <link href="https://441135118wz.github.io/"/>
-  <updated>2023-11-11T13:35:32.204Z</updated>
+  <updated>2023-11-15T07:41:38.217Z</updated>
   <id>https://441135118wz.github.io/</id>
   
   <author>
@@ -17,19 +17,22 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>分治</title>
-    <link href="https://441135118wz.github.io/2023/11/11/%E5%88%86%E6%B2%BB-1/"/>
-    <id>https://441135118wz.github.io/2023/11/11/%E5%88%86%E6%B2%BB-1/</id>
-    <published>2023-11-11T12:23:59.000Z</published>
-    <updated>2023-11-11T13:35:32.204Z</updated>
+    <title>01-Trie的原理与应用</title>
+    <link href="https://441135118wz.github.io/2023/11/15/01-trie%E7%9A%84%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/"/>
+    <id>https://441135118wz.github.io/2023/11/15/01-trie%E7%9A%84%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/</id>
+    <published>2023-11-15T06:08:15.000Z</published>
+    <updated>2023-11-15T07:41:38.217Z</updated>
     
-    <content type="html"><![CDATA[<p>分治，简单来说，就是分而治之。</p><span id="more"></span><p>高中，我们学过二分的思想。</p><p>主要是二分查找。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;分治，简单来说，就是分而治之。&lt;/p&gt;</summary>
+    <content type="html"><![CDATA[<p><ahref="%5BXOR%20Construction%20-%20洛谷%20%7C%20计算机科学教育新生态%20(luogu.com.cn)%5D(https://www.luogu.com.cn/problem/CF1895D)">CF1895D</a>这道题用到了01-Trie，那就再来复习一下01-Trie。</p><span id="more"></span><h2 id="简介">简介</h2><p><strong>01-Trie</strong> 中文名 <strong>是01字典树</strong>，是一种特殊的字典树，它的字符集只有<spanclass="math inline">\(\{0,1\}\)</span>，主要用来解决一些异或问题。</p><h2 id="背景">背景</h2><p>所以，我们先来看一下<strong>字典树</strong>。</p><p><img src="https://oi-wiki.org/string/images/trie1.png" /></p><h3 id="应用">应用：</h3><h5 id="检索字符串">1.检索字符串</h5><p>字典树最基础的应用——查找一个字符串是否在「字典」中出现过。（ps:最容易理解）</p><h5 id="ac-自动机">2.AC 自动机</h5><p>trie 是 <a href="https://oi-wiki.org/string/ac-automaton/">AC自动机</a> 的一部分。（先不学）</p><h5 id="维护异或极值">3.维护异或极值</h5><p>将数的二进制表示看做一个字符串，就可以建出字符集为<spanclass="math inline">\(\{0,1\}\)</span>的 Trie 树。</p><h5 id="维护异或和">4.维护异或和</h5><p>01-trie 是指字符集为<span class="math inline">\(\{0,1\}\)</span>的trie。01-trie 可以用来维护一些数字的异或和，支持修改（删除 +重新插入），和全局加一（即：让其所维护所有数值递增<code>1</code>，本质上是一种特殊的修改操作）。</p><p>如果要维护异或和，需要按值从低位到高位建立 trie。</p><p>重点来研究一下3两点。</p><h2 id="正文">正文</h2><h4 id="问题引入">问题引入</h4><p>给一个长为 <span class="math inline">\(n\)</span>的数列，要求一个<span class="math inline">\(a_i,a_j\)</span>，使得<spanclass="math inline">\(a_i\ xor\ a_j\)</span>最大。</p><h4 id="题解">题解</h4><p>重点是解决已知<spanclass="math inline">\(a_i\)</span>，如何找到异或和最大的<spanclass="math inline">\(a_j\)</span></p><p>我们先建一个01-Trie</p><figure><imgsrc="https://pic4.zhimg.com/80/v2-96108ac067f921e737eefa60a7b42f9f_720w.webp"alt="img" /><figcaption aria-hidden="true">img</figcaption></figure><p>现在对于上面问题，我们贪心地解决即可。如果我们要找与给定数异或<strong>最大</strong>的数，就尽可能走与该数当前位<strong>不同</strong>的路径。反之则尽可能走与当前位<strong>相同</strong>的路径。</p><p>这样可以在$n $的复杂度下求出极值。</p><h2 id="总结">总结</h2><p>思想就是这些，代码难度也一般。</p><p>在今后遇到异或求极值的时候或是求字符串前缀、是否出现等问题的时候，trie是一个很不错的选择。</p>]]></content>
     
     
+    <summary type="html">&lt;p&gt;&lt;a
+href=&quot;%5BXOR%20Construction%20-%20洛谷%20%7C%20计算机科学教育新生态%20(luogu.com.cn)%5D(https://www.luogu.com.cn/problem/CF1895D)&quot;&gt;CF1895D&lt;/a&gt;这道题用到了01-Trie，那就再来复习一下01-Trie。&lt;/p&gt;</summary>
     
+    
+    
+    
+    <category term="算法" scheme="https://441135118wz.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -95,27 +98,6 @@
   </entry>
   
   <entry>
-    <title>分治</title>
-    <link href="https://441135118wz.github.io/2023/10/17/%E5%88%86%E6%B2%BB/"/>
-    <id>https://441135118wz.github.io/2023/10/17/%E5%88%86%E6%B2%BB/</id>
-    <published>2023-10-17T08:05:05.000Z</published>
-    <updated>2023-10-17T08:07:09.119Z</updated>
-    
-    <content type="html"><![CDATA[<p>分治，就是分而治之的思想</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;分治，就是分而治之的思想&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>class 1</title>
     <link href="https://441135118wz.github.io/2023/10/17/class-1/"/>
     <id>https://441135118wz.github.io/2023/10/17/class-1/</id>
@@ -131,50 +113,6 @@
     
     
     <category term="编程技术" scheme="https://441135118wz.github.io/tags/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ACM</title>
-    <link href="https://441135118wz.github.io/2023/10/17/ACM/"/>
-    <id>https://441135118wz.github.io/2023/10/17/ACM/</id>
-    <published>2023-10-17T03:41:13.000Z</published>
-    <updated>2023-10-17T07:44:12.477Z</updated>
-    
-    <content type="html"><![CDATA[<p>hello world!</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;hello world!&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-    <category term="编程技术" scheme="https://441135118wz.github.io/tags/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://441135118wz.github.io/2023/10/17/hello-world/"/>
-    <id>https://441135118wz.github.io/2023/10/17/hello-world/</id>
-    <published>2023-10-17T02:56:08.322Z</published>
-    <updated>2023-10-17T08:02:13.355Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your veryfirst post. Check <a href="https://hexo.io/docs/">documentation</a> formore info. If you get any problems when using Hexo, you can find theanswer in <ahref="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> oryou can ask me on <ahref="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start">Quick Start</h2><h3 id="create-a-new-post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <ahref="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <ahref="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <ahref="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very
-first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; fo</summary>
-      
-    
-    
-    
     
   </entry>
   
