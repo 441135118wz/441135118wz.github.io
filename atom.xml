@@ -79,25 +79,6 @@ href=&quot;https://www.luogu.com.cn/problem/CF1895D&quot;&gt;CF1895D&lt;/a&gt;�
   </entry>
   
   <entry>
-    <title>记于11.10</title>
-    <link href="https://441135118wz.github.io/2023/11/10/%E8%AE%B0%E4%BA%8E11-10/"/>
-    <id>https://441135118wz.github.io/2023/11/10/%E8%AE%B0%E4%BA%8E11-10/</id>
-    <published>2023-11-10T11:49:03.000Z</published>
-    <updated>2025-01-23T18:19:21.810Z</updated>
-    
-    <content type="html"><![CDATA[<p>创作的灵感，源于内心的震荡</p><span id="more"></span><p>我真正喜欢什么，这是一个好问题，我一直在思考，却没有任何答案，我对于一种兴趣总是三分钟热度，我总是归结于是我自己的废物。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;创作的灵感，源于内心的震荡&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="日记" scheme="https://441135118wz.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>推白色相簿2有感</title>
     <link href="https://441135118wz.github.io/2023/11/10/%E6%8E%A8%E7%99%BD%E8%89%B2%E7%9B%B8%E7%B0%BF2%E6%9C%89%E6%84%9F/"/>
     <id>https://441135118wz.github.io/2023/11/10/%E6%8E%A8%E7%99%BD%E8%89%B2%E7%9B%B8%E7%B0%BF2%E6%9C%89%E6%84%9F/</id>
@@ -118,30 +99,6 @@ href=&quot;https://www.luogu.com.cn/problem/CF1895D&quot;&gt;CF1895D&lt;/a&gt;�
   </entry>
   
   <entry>
-    <title>记于10.21</title>
-    <link href="https://441135118wz.github.io/2023/10/21/%E8%AE%B0%E4%BA%8E10-21/"/>
-    <id>https://441135118wz.github.io/2023/10/21/%E8%AE%B0%E4%BA%8E10-21/</id>
-    <published>2023-10-20T16:48:31.000Z</published>
-    <updated>2023-10-20T16:49:16.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>总是在夜深人静的时候想起种种荒唐的过往，越是往高处走，内心就对自己产生愈发强烈的谴责。但在那之后，却是有于迷雾中找到方向的小确信，只是希望阳光能早日穿透浓雾，来我身边</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;总是在夜深人静的时候想起种种荒唐的过往，越是往高处走，内心就对自己产生愈发强烈的谴责。
-但在那之后，却是有于迷雾中找到方向的小确信，只是希望阳光能早日穿透浓雾，来我身边&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-    <category term="日记" scheme="https://441135118wz.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>拓展欧几里得</title>
     <link href="https://441135118wz.github.io/2023/10/18/%E6%8B%93%E5%B1%95%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97/"/>
     <id>https://441135118wz.github.io/2023/10/18/%E6%8B%93%E5%B1%95%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97/</id>
@@ -155,25 +112,6 @@ href=&quot;https://www.luogu.com.cn/problem/CF1895D&quot;&gt;CF1895D&lt;/a&gt;�
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>class 1</title>
-    <link href="https://441135118wz.github.io/2023/10/17/class-1/"/>
-    <id>https://441135118wz.github.io/2023/10/17/class-1/</id>
-    <published>2023-10-17T07:42:06.000Z</published>
-    <updated>2025-01-23T18:32:01.204Z</updated>
-    
-    <content type="html"><![CDATA[<p>何为acm，好玩的游戏？or 痛苦的负担？</p><span id="more"></span><p>根据百度结果，acm国际大学生程序设计竞赛，是由美国计算机协会主办的年度竞赛，旨在展示大学生创新能力、团队精神何在压力下编写程序、分析和解决问题能力</p><p>具体：是三个人组队，一场比赛5个小时，通常有10~13个问题，三人合力解决，比赛是三人只能使用一台电脑。</p><p>我们先来看题目的组成</p><p>一般来说，10多道题目都做出来是不太现实的</p><p>他有难有易，且不按难度排序，而正常比赛中，比拼的不仅仅是会不会做，而是会做的题做的快，且不能出错。</p><p>规则如下： 比赛期间，每队使用1台电脑需要在5个小时内使用<ahref="https://baike.baidu.com/item/C%2FC%2B%2B/6824246?fromModule=lemma_inlink">C/C++</a>、<ahref="https://baike.baidu.com/item/Java/85979?fromModule=lemma_inlink">Java</a>和<ahref="https://baike.baidu.com/item/Python/407313?fromModule=lemma_inlink">Python</a>中的一种编写程序解决7到13个问题。程序完成之后提交评测机运行，运行的结果会判定为正确或错误两种并及时通知参赛队。而且有趣的是每队在正确完成一题后，<ahref="https://baike.baidu.com/item/%E7%BB%84%E7%BB%87%E8%80%85/3188042?fromModule=lemma_inlink">组织者</a>将在其位置上升起一只代表该题颜色的气球，每道题目第一支解决掉它的队还会额外获得一个“FIRSTPROBLEM SOLVED”的气球。</p><p>最后的获胜者为正确解答题目最多且总用时最少的队伍。每道试题用时将从竞赛开始到试题解答被判定为正确为止，其间每一次提交运行结果被判错误的话将被加罚20分钟时间，未正确解答的试题不记时。</p><p>在绝大部分的比赛中，快速的把前几题做对是非常有必要的，在水平差不多的情况下，比拼的就是时间。</p><p>需要学习的内容</p><p>语法部分</p><ol type="1"><li>变量、表达式与顺序语句</li><li>scanf/printf语法及判断语句</li><li>循环语句</li><li>数组</li><li>字符串</li><li>函数</li><li>结构体、类、指针与引用</li><li>STL容器、位运算与常用库函数这些内容，不需要智商，只需要多做水题，把语法的使用趋于熟练、自然即可，而练习完这些，可能就能把前面几道水题过了。</li></ol><p>基础算法部分</p><h1 id="基础算法">基础算法</h1><p>排序 二分 高精度 前缀和与差分 双指针算法 位运算 离散化 区间合并</p><h1 id="数据结构">数据结构</h1><p>链表与邻接表：树与图的存储 栈与队列：单调队列、单调栈 kmp Trie 并查集堆 Hash表</p><h1 id="搜索与图论">搜索与图论</h1><p>DFS与BFS 树与图的遍历：拓扑排序 最短路 最小生成树二分图：染色法、匈牙利算法</p><h1 id="数学知识">数学知识</h1><p>质数 约数 欧拉函数 快速幂 扩展欧几里得算法 中国剩余定理 高斯消元组合计数 容斥原理 简单博弈论</p><h1 id="动态规划重中之重分水岭">动态规划(重中之重，分水岭)</h1><p>背包问题 线性DP 区间DP 计数类DP 数位统计DP 状态压缩DP 树形DP记忆化搜索 贪心</p><p>时空复杂度分析</p><p>基本上就是这些内容。 其实并不是很多 而且很多东西基本没有考过。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;何为acm，好玩的游戏？or 痛苦的负担？&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="编程技术" scheme="https://441135118wz.github.io/tags/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   

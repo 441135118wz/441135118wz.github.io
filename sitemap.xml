@@ -20,15 +20,6 @@
   </url>
   
   <url>
-    <loc>https://441135118wz.github.io/2023/10/17/class-1/</loc>
-    
-    <lastmod>2025-01-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://441135118wz.github.io/2023/11/15/01-trie%E7%9A%84%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/</loc>
     
     <lastmod>2025-01-23</lastmod>
@@ -47,27 +38,9 @@
   </url>
   
   <url>
-    <loc>https://441135118wz.github.io/2023/11/10/%E8%AE%B0%E4%BA%8E11-10/</loc>
-    
-    <lastmod>2025-01-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://441135118wz.github.io/2023/11/10/%E6%8E%A8%E7%99%BD%E8%89%B2%E7%9B%B8%E7%B0%BF2%E6%9C%89%E6%84%9F/</loc>
     
     <lastmod>2023-11-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://441135118wz.github.io/2023/10/21/%E8%AE%B0%E4%BA%8E10-21/</loc>
-    
-    <lastmod>2023-10-20</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -92,13 +65,6 @@
 
   
   <url>
-    <loc>https://441135118wz.github.io/tags/%E6%97%A5%E8%AE%B0/</loc>
-    <lastmod>2025-01-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://441135118wz.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2025-01-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -113,7 +79,7 @@
   </url>
   
   <url>
-    <loc>https://441135118wz.github.io/tags/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://441135118wz.github.io/tags/%E6%97%A5%E8%AE%B0/</loc>
     <lastmod>2025-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
