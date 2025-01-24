@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ori的个人博客</title>
+  
+  <subtitle>热爱生活，热爱学习</subtitle>
+  <link href="https://441135118wz.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://441135118wz.github.io/"/>
+  <updated>2025-01-23T18:26:27.152Z</updated>
+  <id>https://441135118wz.github.io/</id>
+  
+  <author>
+    <name>President</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>1.24随笔</title>
+    <link href="https://441135118wz.github.io/2025/01/24/1.24%E9%9A%8F%E7%AC%94/"/>
+    <id>https://441135118wz.github.io/2025/01/24/1.24%E9%9A%8F%E7%AC%94/</id>
+    <published>2025-01-23T18:23:12.000Z</published>
+    <updated>2025-01-23T18:26:27.152Z</updated>
+    
+    <content type="html"><![CDATA[<p>找回这个荒废了一年多的博客并设置好了，看看效果，后面的做题记录就写在这里了。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;找回这个荒废了一年多的博客并设置好了，看看效果，后面的做题记录就写在这里了。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://441135118wz.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>01-Trie的原理与应用</title>
+    <link href="https://441135118wz.github.io/2023/11/15/01-trie%E7%9A%84%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/"/>
+    <id>https://441135118wz.github.io/2023/11/15/01-trie%E7%9A%84%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/</id>
+    <published>2023-11-15T06:08:15.000Z</published>
+    <updated>2025-01-23T18:32:01.194Z</updated>
+    
+    <content type="html"><![CDATA[<p><ahref="https://www.luogu.com.cn/problem/CF1895D">CF1895D</a>这道题用到了01-Trie，那就再来复习一下01-Trie。</p><span id="more"></span><h2 id="简介">简介</h2><p><strong>01-Trie</strong> 中文名 <strong>是01字典树</strong>，是一种特殊的字典树，它的字符集只有<spanclass="math inline">\(\{0,1\}\)</span>，主要用来解决一些异或问题。</p><h2 id="背景">背景</h2><p>所以，我们先来看一下<strong>字典树</strong>。</p><p><img src="https://oi-wiki.org/string/images/trie1.png" /></p><h3 id="应用">应用：</h3><h5 id="检索字符串">1.检索字符串</h5><p>字典树最基础的应用——查找一个字符串是否在「字典」中出现过。（ps:最容易理解）</p><h5 id="ac-自动机">2.AC 自动机</h5><p>trie 是 <a href="https://oi-wiki.org/string/ac-automaton/">AC自动机</a> 的一部分。（先不学）</p><h5 id="维护异或极值">3.维护异或极值</h5><p>将数的二进制表示看做一个字符串，就可以建出字符集为<spanclass="math inline">\(\{0,1\}\)</span>的 Trie 树。</p><h5 id="维护异或和">4.维护异或和</h5><p>01-trie 是指字符集为<span class="math inline">\(\{0,1\}\)</span>的trie。01-trie 可以用来维护一些数字的异或和，支持修改（删除 +重新插入），和全局加一（即：让其所维护所有数值递增<code>1</code>，本质上是一种特殊的修改操作）。</p><p>如果要维护异或和，需要按值从低位到高位建立 trie。</p><p>重点来研究一下3两点。</p><h2 id="正文">正文</h2><h4 id="问题引入">问题引入</h4><p>给一个长为 <span class="math inline">\(n\)</span>的数列，要求一个<span class="math inline">\(a_i,a_j\)</span>，使得<spanclass="math inline">\(a_i\ xor\ a_j\)</span>最大。</p><h4 id="题解">题解</h4><p>重点是解决已知<spanclass="math inline">\(a_i\)</span>，如何找到异或和最大的<spanclass="math inline">\(a_j\)</span></p><p>我们先建一个01-Trie</p><figure><imgsrc="https://pic4.zhimg.com/80/v2-96108ac067f921e737eefa60a7b42f9f_720w.webp"alt="img" /><figcaption aria-hidden="true">img</figcaption></figure><p>现在对于上面问题，我们贪心地解决即可。如果我们要找与给定数异或<strong>最大</strong>的数，就尽可能走与该数当前位<strong>不同</strong>的路径。反之则尽可能走与当前位<strong>相同</strong>的路径。</p><p>这样可以在$n $的复杂度下求出极值。</p><h2 id="总结">总结</h2><p>思想就是这些，代码难度也一般。</p><p>在今后遇到异或求极值的时候或是求字符串前缀、是否出现等问题的时候，trie是一个很不错的选择。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a
+href=&quot;https://www.luogu.com.cn/problem/CF1895D&quot;&gt;CF1895D&lt;/a&gt;这道题用到了01-Trie，那就再来复习一下01-Trie。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="算法" scheme="https://441135118wz.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>记于11.10</title>
+    <link href="https://441135118wz.github.io/2023/11/10/%E8%AE%B0%E4%BA%8E11-10/"/>
+    <id>https://441135118wz.github.io/2023/11/10/%E8%AE%B0%E4%BA%8E11-10/</id>
+    <published>2023-11-10T11:49:03.000Z</published>
+    <updated>2025-01-23T18:19:21.810Z</updated>
+    
+    <content type="html"><![CDATA[<p>创作的灵感，源于内心的震荡</p><span id="more"></span><p>我真正喜欢什么，这是一个好问题，我一直在思考，却没有任何答案，我对于一种兴趣总是三分钟热度，我总是归结于是我自己的废物。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;创作的灵感，源于内心的震荡&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="日记" scheme="https://441135118wz.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>推白色相簿2有感</title>
+    <link href="https://441135118wz.github.io/2023/11/10/%E6%8E%A8%E7%99%BD%E8%89%B2%E7%9B%B8%E7%B0%BF2%E6%9C%89%E6%84%9F/"/>
+    <id>https://441135118wz.github.io/2023/11/10/%E6%8E%A8%E7%99%BD%E8%89%B2%E7%9B%B8%E7%B0%BF2%E6%9C%89%E6%84%9F/</id>
+    <published>2023-11-10T10:47:03.000Z</published>
+    <updated>2023-11-10T11:41:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>一月份下载的游戏，到了11月10号才推完，断断续续快一年，才推完这部被称为神作的gal。</p><p><strong>真正好的作品，是能够打动人心的。</strong></p><span id="more"></span><p>​在推的过程中，不知道为什么，总是感觉到希望伴随着失望。序章没有选项，只能由着“我“选择小木曾雪菜，但是却念念不忘和纱，却在最后快要分开的时候才表露自己的心意。对于序章的结局，我感觉很难以接受，因为剧情里的每个人都是痛苦的。在推的过程中，我时常会想，为什么看似每一步都是最优解，而最终的结局确实这样的痛苦。要比喻一下的话，就很像贪心和dp的区别。我总是会很疑惑，为何雪菜什么都知道，却还是这样爱着春希。即使，中间那被冷落的3年。只有到了最后，我才知道，是她觉得从和纱的手中抢走春希的行为，是最大的罪孽，她此后受到的冷落，都被她理解为了是处罚。而春希，我觉得是最幸福却是最不幸的，他爱着和纱，却不得不选择雪菜，而最后，他的选择是一直喜欢和纱，爱着雪菜。我对于白月光的执着，让我在选项中都向着和纱，但是最后的结局还是有一些遗憾：雪菜和春希走到了最后，和纱也重新振作了起来。看起来还不错的结局，却是经历了多少的挫折和痛苦、猜疑才达成的。三个人永远在一起的世界，也许是永远达不成的，但是，却是每个人为之努力的方向。这样纯真的感情也许只有在这种虚拟的作品中才能见到，但是我们会为之感动，会尽可能的用自己的感性的判断来让他们达成尽可能好的结局。这才是gal的魅力吧。</p><p>​和纱之所以努力的练钢琴，有2个原因，一个是爱春希，一个是爱母亲，作品中爱的力量驱使着和纱化悲痛为力量，一直朝前，努力称为下一个天才冬马。</p><p>​玩完之后的彷徨，一是因为我对这剧情的感慨，二也是我对感情这种复杂东西的新认知，在之前，我会认为只要努力的付出，像春希一样的思考问题并去付诸行动，便能成功。这部作品，确实对于我没谈过恋爱的人生有指导意义。</p><p>​上次这么深思还是玩完eden的时候，也emo了好久，可能是我比较感性，也可能是我的阅历太少了。</p><p>以上，便是我推完白色相簿2的一些感受。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;一月份下载的游戏，到了11月10号才推完，断断续续快一年，才推完这部被称为神作的gal。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;真正好的作品，是能够打动人心的。&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="颓" scheme="https://441135118wz.github.io/tags/%E9%A2%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>记于10.21</title>
+    <link href="https://441135118wz.github.io/2023/10/21/%E8%AE%B0%E4%BA%8E10-21/"/>
+    <id>https://441135118wz.github.io/2023/10/21/%E8%AE%B0%E4%BA%8E10-21/</id>
+    <published>2023-10-20T16:48:31.000Z</published>
+    <updated>2023-10-20T16:49:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>总是在夜深人静的时候想起种种荒唐的过往，越是往高处走，内心就对自己产生愈发强烈的谴责。但在那之后，却是有于迷雾中找到方向的小确信，只是希望阳光能早日穿透浓雾，来我身边</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;总是在夜深人静的时候想起种种荒唐的过往，越是往高处走，内心就对自己产生愈发强烈的谴责。
+但在那之后，却是有于迷雾中找到方向的小确信，只是希望阳光能早日穿透浓雾，来我身边&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://441135118wz.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>拓展欧几里得</title>
+    <link href="https://441135118wz.github.io/2023/10/18/%E6%8B%93%E5%B1%95%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97/"/>
+    <id>https://441135118wz.github.io/2023/10/18/%E6%8B%93%E5%B1%95%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97/</id>
+    <published>2023-10-18T09:43:53.000Z</published>
+    <updated>2025-01-24T06:11:29.992Z</updated>
+    
+    <content type="html"><![CDATA[<p>一个晚上的成果。 <span id="more"></span></p><h1 id="背景">背景</h1><h3 id="贝祖定理">贝祖定理：</h3><p>如果 <span class="math inline">\(a\)</span>、<spanclass="math inline">\(b\)</span> 是整数，那么一定存在整数 <spanclass="math inline">\(x\)</span> ， <spanclass="math inline">\(y\)</span> 使得 <spanclass="math inline">\(ax+by=gcd(a,b)\)</span> 。</p><h3 id="证明">证明：</h3><ol type="1"><li>若任何一个等于 <span class="math inline">\(0\)</span> ，则 <spanclass="math inline">\(gcd(a,b)=a\)</span> ，这时定理显然成立</li><li>若 <span class="math inline">\(a,b\)</span> 不等于0. 由于 <spanclass="math inline">\(gcd(a,b)=gcd(a,-b)\)</span> , 不妨设 <spanclass="math inline">\(a,b\)</span> 都大于0， <spanclass="math inline">\(a\ge b,gcd(a,b)=d.\)</span> 对 <spanclass="math inline">\(ax+by=d\)</span> ，两边同时除以 <spanclass="math inline">\(d\)</span> ,可得 <spanclass="math inline">\(a_1x+b_1y=1\)</span> ,其中 <spanclass="math inline">\((a_1,b_1)=1\)</span> . 转证 <spanclass="math inline">\(a_1x+b_1y=1\)</span> .我们先回顾一下辗转相除法是怎么做的，由 <spanclass="math inline">\(gcd(a,b)\longrightarrow gcd(b,a modb)\longrightarrow...\)</span> 我们把模出来的数据叫做 <spanclass="math inline">\(r\)</span> 于是有： <span class="math display">\[gcd(a_1,b_1)=gcd(b_1,r_1)=gcd(r_1,r_2)=...=gcd(r_{n-1},r_n)=1\]</span></li></ol><p>把辗转相除法中的运算展开，做成带余数的除法，得 <spanclass="math display">\[\begin{equation}\begin{aligned}a_1=q_1b_1+r_1(0\le r_1 &lt;b_1) \\b_1=q_2r_1+r_2(0\le r_2 &lt;r_1) \\r_1=q_3r_2+r_3 (0\le r_3 &lt;b_2)\\... \\r_{n-3}=q_{n-1}r_{n-2}+r_{n-1} \\r_{n-2}=q_nr_{n-1}+r_n\\r_{n-1}=q_{n+1}r_{n}\end{aligned}\end{equation}\]</span> 不妨令辗转相除法在除到互质的时候退出则<spanclass="math inline">\(r_n=1\)</span> （<spanclass="math inline">\(q\)</span>被换成了<spanclass="math inline">\(x\)</span>,为了符合最终形式） <spanclass="math display">\[r_{n-2}=x_nr_{n-1}+1\]</span> 即 <span class="math display">\[1=r_{n-2}-x_nr_{n-1}\]</span> 由倒数第三个式子<spanclass="math inline">\(r_{n-1}=r_{n-3}-x_{n-1}r_{n-2}\)</span>代入上式，得<span class="math display">\[1=(1+x_nx_{n-1})r_{n-2}-x_nr_{n-3}\]</span> 然后用同样的方法用它上面的等式逐个的消去<spanclass="math inline">\(r_{n-2},...,r_1\)</span>,</p><p>可证得<spanclass="math inline">\(1=a_1x+b_1y\)</span>.这样等于是一般式中<spanclass="math inline">\(d=1\)</span>的情况</p><h3 id="欧几里得算法">欧几里得算法</h3><p>即辗转相除法，它的代码非常简单：</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//辗转相除法，求两个数的最大公因数</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">gcd</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (b == <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> a;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">gcd</span>(b, a%b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="拓展欧几里得算法">拓展欧几里得算法</h1><p>扩展欧几里得算法用来解决这样一个问题：给定两个非零的整数<spanclass="math inline">\(a\)</span>和<spanclass="math inline">\(b\)</span>，求一组整数解<spanclass="math inline">\((x，y)\)</span>使得<spanclass="math inline">\(ax+by = gcd(a,b)\)</span>成立，其中<spanclass="math inline">\(gcd(a,b)\)</span>表示<spanclass="math inline">\(a\)</span>和<spanclass="math inline">\(b\)</span>的最大公约数。（其中我们通过前面的贝祖定理可知解一定存在）</p><p>回忆我们知道的欧几里得算法，它总是把<spanclass="math inline">\(gcd(a,b)\)</span>转化为求解 <spanclass="math inline">\(gcd(b,a\%b)\)</span> ，而当<spanclass="math inline">\(b\)</span>变为<spanclass="math inline">\(0\)</span>时返回<spanclass="math inline">\(a\)</span>，此时的<spanclass="math inline">\(a\)</span>就等于<spanclass="math inline">\(gcd\)</span>。也就是说，欧几里得算法结束时变量<spanclass="math inline">\(a\)</span>中存放的是<spanclass="math inline">\(gcd\)</span>，变量<spanclass="math inline">\(b\)</span>中存放的是<spanclass="math inline">\(0\)</span>，因此此时显然有<spanclass="math inline">\(a × 1 + b × 0 = g c d\)</span>成立，此时有<spanclass="math inline">\(x=1\)</span>、<spanclass="math inline">\(y=0\)</span>成立。</p><p>我们不妨利用上面的欧几里得算法的过程来计算<spanclass="math inline">\(x\)</span>和<spanclass="math inline">\(y\)</span>。目前已知的是递归边界成立时为<spanclass="math inline">\(x=1\)</span>、<spanclass="math inline">\(y=0\)</span>，需要想办法反推出最初始的<spanclass="math inline">\(x\)</span>和<spanclass="math inline">\(y\)</span>。</p><p>对比等号左右两边可以马上得到下面的递推公式： <spanclass="math display">\[\begin{cases}x_1=y_2\\y_1=x_2-(a/b)y_2\end{cases}\]</span> 由此可以通过<span class="math inline">\(x_2\)</span>和<spanclass="math inline">\(y_2\)</span>来进行反推出<spanclass="math inline">\(x_1\)</span>和<spanclass="math inline">\(y_1\)</span>了。代码如下：</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">exGcd</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b, <span class="type">int</span> &amp;x, <span class="type">int</span> &amp;y)</span>   <span class="comment">//x和y使用引用</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(b == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        x = <span class="number">1</span>;</span><br><span class="line">        y = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">return</span> a;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> g = <span class="built_in">exGcd</span>(b, a%b, x, y);    <span class="comment">//递归计算exGcd（b,a%b）</span></span><br><span class="line">    <span class="type">int</span> temp = x;             <span class="comment">//存放x的值</span></span><br><span class="line">    x = y;</span><br><span class="line">    y = temp - (a/b)*y;       <span class="comment">//更新y = x(old) - a/b*y(old)</span></span><br><span class="line">    <span class="keyword">return</span> g;                 <span class="comment">//g是gcd</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>由于这里我们使用了引用，因此当 <spanclass="math inline">\(exGcd\)</span> 函数结束时 <spanclass="math inline">\(x\)</span> 和 <spanclass="math inline">\(y\)</span> 就是所求的解。</p><p>显然，在得到这样一组解之后，就可以通过下面的式子得到全部解（其中<span class="math inline">\(K\)</span> 为任意整数）： <spanclass="math display">\[\begin{cases}x^{&#39;}=x+\frac {b}{gcd}\times K\\y^{&#39;}=y-\frac{a}{gcd}\times K\end{cases}\]</span></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;一个晚上的成果。</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>class 1</title>
+    <link href="https://441135118wz.github.io/2023/10/17/class-1/"/>
+    <id>https://441135118wz.github.io/2023/10/17/class-1/</id>
+    <published>2023-10-17T07:42:06.000Z</published>
+    <updated>2025-01-23T18:32:01.204Z</updated>
+    
+    <content type="html"><![CDATA[<p>何为acm，好玩的游戏？or 痛苦的负担？</p><span id="more"></span><p>根据百度结果，acm国际大学生程序设计竞赛，是由美国计算机协会主办的年度竞赛，旨在展示大学生创新能力、团队精神何在压力下编写程序、分析和解决问题能力</p><p>具体：是三个人组队，一场比赛5个小时，通常有10~13个问题，三人合力解决，比赛是三人只能使用一台电脑。</p><p>我们先来看题目的组成</p><p>一般来说，10多道题目都做出来是不太现实的</p><p>他有难有易，且不按难度排序，而正常比赛中，比拼的不仅仅是会不会做，而是会做的题做的快，且不能出错。</p><p>规则如下： 比赛期间，每队使用1台电脑需要在5个小时内使用<ahref="https://baike.baidu.com/item/C%2FC%2B%2B/6824246?fromModule=lemma_inlink">C/C++</a>、<ahref="https://baike.baidu.com/item/Java/85979?fromModule=lemma_inlink">Java</a>和<ahref="https://baike.baidu.com/item/Python/407313?fromModule=lemma_inlink">Python</a>中的一种编写程序解决7到13个问题。程序完成之后提交评测机运行，运行的结果会判定为正确或错误两种并及时通知参赛队。而且有趣的是每队在正确完成一题后，<ahref="https://baike.baidu.com/item/%E7%BB%84%E7%BB%87%E8%80%85/3188042?fromModule=lemma_inlink">组织者</a>将在其位置上升起一只代表该题颜色的气球，每道题目第一支解决掉它的队还会额外获得一个“FIRSTPROBLEM SOLVED”的气球。</p><p>最后的获胜者为正确解答题目最多且总用时最少的队伍。每道试题用时将从竞赛开始到试题解答被判定为正确为止，其间每一次提交运行结果被判错误的话将被加罚20分钟时间，未正确解答的试题不记时。</p><p>在绝大部分的比赛中，快速的把前几题做对是非常有必要的，在水平差不多的情况下，比拼的就是时间。</p><p>需要学习的内容</p><p>语法部分</p><ol type="1"><li>变量、表达式与顺序语句</li><li>scanf/printf语法及判断语句</li><li>循环语句</li><li>数组</li><li>字符串</li><li>函数</li><li>结构体、类、指针与引用</li><li>STL容器、位运算与常用库函数这些内容，不需要智商，只需要多做水题，把语法的使用趋于熟练、自然即可，而练习完这些，可能就能把前面几道水题过了。</li></ol><p>基础算法部分</p><h1 id="基础算法">基础算法</h1><p>排序 二分 高精度 前缀和与差分 双指针算法 位运算 离散化 区间合并</p><h1 id="数据结构">数据结构</h1><p>链表与邻接表：树与图的存储 栈与队列：单调队列、单调栈 kmp Trie 并查集堆 Hash表</p><h1 id="搜索与图论">搜索与图论</h1><p>DFS与BFS 树与图的遍历：拓扑排序 最短路 最小生成树二分图：染色法、匈牙利算法</p><h1 id="数学知识">数学知识</h1><p>质数 约数 欧拉函数 快速幂 扩展欧几里得算法 中国剩余定理 高斯消元组合计数 容斥原理 简单博弈论</p><h1 id="动态规划重中之重分水岭">动态规划(重中之重，分水岭)</h1><p>背包问题 线性DP 区间DP 计数类DP 数位统计DP 状态压缩DP 树形DP记忆化搜索 贪心</p><p>时空复杂度分析</p><p>基本上就是这些内容。 其实并不是很多 而且很多东西基本没有考过。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;何为acm，好玩的游戏？or 痛苦的负担？&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="编程技术" scheme="https://441135118wz.github.io/tags/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+</feed>
