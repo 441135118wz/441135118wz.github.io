@@ -6,7 +6,7 @@
   <link href="https://441135118wz.github.io/atom.xml" rel="self"/>
   
   <link href="https://441135118wz.github.io/"/>
-  <updated>2025-01-25T18:10:34.062Z</updated>
+  <updated>2025-01-25T18:13:53.893Z</updated>
   <id>https://441135118wz.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>abc390</title>
+    <link href="https://441135118wz.github.io/2025/01/26/abc390/"/>
+    <id>https://441135118wz.github.io/2025/01/26/abc390/</id>
+    <published>2025-01-25T18:11:33.000Z</published>
+    <updated>2025-01-25T18:13:53.893Z</updated>
+    
+    <content type="html"><![CDATA[<p>10多分钟写完了abc，d的优化不够到位被卡，ddl上又多一条dfs优化了。这次的e倒是很简单，看到min 取max，第一反应就是二分，于是就是对三种不同的分别背包然后二分，由于他数据范围小所以暴力n2也能过，但是二分应该是最好的算法。</p><p>暴力的思想需要学习。 xor的性质也不是很了解，需要学习线性基。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;10多分钟写完了abc，d的优化不够到位被卡，ddl上又多一条dfs优化了。
+这次的e倒是很简单，看到min 取max
+，第一反应就是二分，于是就是对三种不同的分别背包然后二分，由于他数据范围小所以暴力n2也能过，但是二分应该是最好的算法。&lt;/p&gt;
+&lt;p&gt;暴力的思想需</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>树形dp学习笔记</title>
